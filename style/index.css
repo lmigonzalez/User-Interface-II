@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #fff;
+    
 }
 
 body{
@@ -16,7 +17,7 @@ body{
 }
 
 header{
-    height: 20vh;
+    height: auto;
     width: 100%;
     background-color: #041C32;
     padding: 30px;
@@ -25,6 +26,8 @@ header{
     justify-content: center;
     align-items: flex-start;
 }
+
+
 
 header h1{
     font-family: 'Roboto Mono', monospace;
@@ -63,7 +66,7 @@ section{
 }
 
 .main-inf img{
-    width: 400px;
+    width: 25rem;
     height: auto;
 }
 
@@ -152,3 +155,85 @@ footer button:hover{
     transform: scale(0.9);
 
 } 
+
+
+@media(max-width: 800px){
+
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    header nav a{
+        margin: 10px;
+    }
+
+    .main-inf{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-inf img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .main-inf-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-inf-text p{
+        text-align: center;
+    }
+
+    .projects-section-1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project{
+        width: 90%;
+    }
+        
+    }
+
+    @media(max-width: 500px){
+        
+        .main-inf img{
+            width: 70%;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .projects-section-1{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .project{
+            width: 90%;
+        }
+            
+        }
